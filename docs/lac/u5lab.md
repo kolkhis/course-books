@@ -14,7 +14,7 @@
 ### Required Materials
 
 - Rocky 9.4+ - ProLUG Lab
-  - Or comparable Linux box
+    - Or comparable Linux box
 - root or sudo command access
 
 #### Downloads
@@ -33,18 +33,18 @@ Exercises (Warmup to quickly run through your system and practice commands)
 1. `mkdir lab_users`
 2. `cd /lab_users`
 3. `cat /etc/passwd`
-   - We'll be examining the contents of this file later
+    - We'll be examining the contents of this file later
 4. `cat /etc/passwd | tail -5`
-   - What did this do to the output of the file?
+    - What did this do to the output of the file?
 5. `cat /etc/passwd | tail -5 | nl`
 6. `cat /etc/passwd | tail -5 | awk -F : '{print $1, $3, $7}'`
-   - What did that do and what do each of the `$#` represent?
-   - Can you give the 2nd, 5th, and 6th fields?
+    - What did that do and what do each of the `$#` represent?
+    - Can you give the 2nd, 5th, and 6th fields?
 7. `cat /etc/passwd | tail -5 | awk -F : '{print $NF}'`
-   - What does this `$NF` mean? Why might this be useful to us as administrators?
+    - What does this `$NF` mean? Why might this be useful to us as administrators?
 8. `alias`
-   - Look at the things you have aliased.
-   - These come from defaults in your `.bashrc` file. We'll configure these later
+    - Look at the things you have aliased.
+    - These come from defaults in your `.bashrc` file. We'll configure these later
 9. `cd /root`
 10. `ls -l`
 11. `ll`
@@ -122,7 +122,7 @@ Are there always 7 fields?
    | --------- | -------- | -------- | ------------------------ |
    | `puppet`  | `x`      | `991`    | `foreman, foreman-proxy` |
 
-   - `cat` or `more` the file to verify these are the values you see. Are there always 4 fields?
+    - `cat` or `more` the file to verify these are the values you see. Are there always 4 fields?
 
 4. We're not going to break down the `g` files, but there are a lot of resources online that
    can show you this same information.
@@ -237,11 +237,11 @@ work
    vi /etc/group
    ```
 
-   - Shift+G to go to the bottom of the file.
-   - Hit `o` to create a new line and go to insert mode.
-   - Add `project2:x:60002:user4`
-   - Hit `Esc`
-   - `:wq!` to write quit the file explicit force because it's a read only file.
+    - Shift+G to go to the bottom of the file.
+    - Hit `o` to create a new line and go to insert mode.
+    - Add `project2:x:60002:user4`
+    - Hit `Esc`
+    - `:wq!` to write quit the file explicit force because it's a read only file.
    ```bash linenums="1"
    id user 4 # Should now see the project2 in the user's groups
    ```
@@ -258,11 +258,11 @@ work
    vi /etc/group
    ```
 
-   - `Shift+G` Will take you to the bottom.
-   - Hit `i` (will put you into insert mode).
-   - Add `,user1,user2` after `user4`.
-   - Hit `Esc`.
-   - `:wq` to save and exit.  
+    - `Shift+G` Will take you to the bottom.
+    - Hit `i` (will put you into insert mode).
+    - Add `,user1,user2` after `user4`.
+    - Hit `Esc`.
+    - `:wq` to save and exit.  
      Verify your users are in the group now
    ```bash linenums="1"
    id user4

@@ -14,7 +14,7 @@
 ### Required Materials
 
 - Rocky 9.4+ - ProLUG Lab
-  - Or comparable Linux box
+    - Or comparable Linux box
 - root or sudo command access
 
 #### Downloads
@@ -201,7 +201,7 @@ issues. No one cares what you think, they care what you can show, or prove.
 
 - Do we have a system baseline to compare against?
 
-  - No? Make a baseline.
+    - No? Make a baseline.
     ```bash linenums="1"
     iostat -xh 1 10
     ```
@@ -209,8 +209,8 @@ issues. No one cares what you think, they care what you can show, or prove.
 - Can we say that this system is not under heavy load?
 - What does a system under no load look like performing tasks in our environment?
 
-  - Assuming our systems are not running under load, capture SAR and baseline stats.
-  - Perform some basic tasks and get their completion times.
+    - Assuming our systems are not running under load, capture SAR and baseline stats.
+    - Perform some basic tasks and get their completion times.
 
     - Writing/deleting 3000 empty files #modify as needed for your system
     ```bash linenums="1"

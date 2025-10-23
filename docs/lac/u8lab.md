@@ -16,7 +16,7 @@
 ### Required Materials
 
 - Rocky 9.4+ - ProLUG Lab
-  - Or comparable Linux box
+    - Or comparable Linux box
 - root or sudo command access
 
 #### Downloads
@@ -234,23 +234,23 @@ I will prove that here shortly.
 
 - The `right bunny` is `Red` and `Tall`.
 
-  - This evaluates to `true` for the _Red_ test but `false` for the _Tall_ test.
-  - The statement evaluates to `false`.
+    - This evaluates to `true` for the _Red_ test but `false` for the _Tall_ test.
+    - The statement evaluates to `false`.
 
 - The `left bunny` is `Blue` and `Tall`.
-  - This evaluates to `true` for the _Blue_ test and `true` for the _Tall_ test.
-  - The statement evaluates to `true`.
+    - This evaluates to `true` for the _Blue_ test and `true` for the _Tall_ test.
+    - The statement evaluates to `true`.
 
 #### `OR` Examples
 
 - The `right bunny` is `Red` or `Tall`.
 
-  - This evaluates to `true` for the _Red_ test but `false` for the _Tall_ test.
-  - The statement evaluates to `true`.
+    - This evaluates to `true` for the _Red_ test but `false` for the _Tall_ test.
+    - The statement evaluates to `true`.
 
 - The `left bunny` is `Red` or `Short`.
-  - This evaluates to `false` for _Red_ and `false` for _Short_.
-  - The statement evaluates to `false`.
+    - This evaluates to `false` for _Red_ and `false` for _Short_.
+    - The statement evaluates to `false`.
 
 ### 2.6 - Truth Tables
 
